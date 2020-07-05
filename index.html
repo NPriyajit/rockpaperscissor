@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./rock.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <section class="overlay">
+      <h2>Rock ✊ Paper ✋ Scissor ✌️</h2>
+      <button class="startBtn">Start Game</button>
+      <a
+        href="https://priyajit.netlify.com"
+        rel="noopener noreferrer"
+        target="_blank"
+        >#Developed by Priyajit</a
+      >
+    </section>
+    <section class="main">
+      <div class="options">
+        <button class="selections" data-item="rock">✊</button>
+        <button class="selections" data-item="paper">✋</button>
+        <button class="selections" data-item="scissor">✌️</button>
+      </div>
+      <div class="result">
+        <div class="you">
+          <h3>You<span>😎</span></h3>
+          <p>Score: <span id="yourScore">0</span></p>
+        </div>
+        <div data-final-column>
+          <h3>Computer<span>💻</span></h3>
+          <p>Score: <span id="computerScore">0</span></p>
+        </div>
+      </div>
+      <div class="button">New Game</div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".startBtn").click(function () {
+          $(".overlay").fadeOut();
+          $(".overlay").css(display, "none");
+        });
+      });
+    </script>
+  </body>
+</html>
