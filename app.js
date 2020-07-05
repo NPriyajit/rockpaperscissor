@@ -53,9 +53,9 @@ function setResult(selection, winner) {
   if (winner) div.classList.add("winner");
   endCol.after(div);
 }
-
+//incrementing the score when winner wins.
 function incrementScore(scoreSpan) {
   scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1;
 }
-
+//Calling main method when body loads
 window.addEventListener("load", main);
